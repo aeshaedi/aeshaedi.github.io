@@ -1,5 +1,12 @@
+* {
+
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 15px;
 }
 
 .pixel {
@@ -13,4 +20,23 @@ hr{
 a {
     text-decoration: none;
     color: blue;
+}
+
+button {
+    all: unset;
+    padding: 15px;
+    border: solid 3px black;
+    transition: 0.2s;
+}
+button:hover {
+background-color: blue;
+color: white;}
+
+button:active {
+    background-color: lightblue;
+    }
+#buttonClickerDisplay {
+    padding: 15px;
+    border: solid 3px black;
+    width: max-content;
 }
