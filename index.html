@@ -31,12 +31,33 @@
             <li>Colors and diversity 🌈</li>
             <li>Futurism 🚀</li>
             <li>Technology 💻</li>
-        </ul></details>
+        </ul>
         <p>Particularly about technology.</p>
+    </details>
+       
         <img width="200px
         " src="/assets/aeshaedi.png"  alt="Aeshaedi black and white logo">
         <hr>
+        <p>aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi aeshadi</p>
+        <hr>
+        <p>You've visited this site <span id="visitsDisplay"></span> times</p>
+        <hr>
         <p>Contact me at <a href="mailto:aeshaedi@gmail.com">aeshaedi@gmail.com</a></p>
     </div>
+
+    <p style="text-align: center;">web by aeshaedi</p>
+
+    <script>
+        var visitsDisplay = document.getElementById("visitsDisplay")
+        var visits = localStorage.getItem("visits")
+        if (visits == null){
+            visits = 0
+        }
+        visits++
+        localStorage.setItem("visits",visits)
+        visitsDisplay.textContent = visits
+
+
+    </script>
 </body>
 </html>

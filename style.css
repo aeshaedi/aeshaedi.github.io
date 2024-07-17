@@ -7,5 +7,9 @@ body {
 }
 
 hr{
-    border: solid 3px black;
+    border: dashed 3px black;
+}
+
+a {
+    text-decoration: none;
 }
