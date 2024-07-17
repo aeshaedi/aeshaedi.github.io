@@ -5,3 +5,7 @@ body {
 .pixel {
     image-rendering: pixelated;
 }
+
+hr{
+    border: solid 3px black;
+}
