@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeshaedi</title>
+    <link rel="icon" type="image/x-icon" href="/assets/aeshaedi-favicon.png">
+    <meta name="description" content="Aeshaedi personal web page">
+    <meta name="keywords" content="Aeshaedi">
+    <meta name="author" content="Aeshaedi">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <div style="display:flex;align-items: center;"><img width="50px" height="50px" class="pixel"
+                src="/assets/aeshaedi-icon.png" alt="Aeshaedi icon">
+            <h1><a href="/" style="color: unset">Aeshaedi</a></h1>
+        </div>
+        <hr>
+        <p>The website <span id="locationHref"></span> doesn't yet exist. You may want to go <a href="/">home</a></p>
+        
+        <br>
+            <img width="200px
+        " src="/assets/aeshaedi.png" alt="Aeshaedi black and white logo">
+        
+        <hr>
+        <p>aeshaedi aeshaedi aeshaedi aeshaedi aeshaedi aeshaedi aeshaedi aeshaedi <i>aeshaedi</i> aeshaedi aeshaedi
+            aeshaedi aeshaedi aeshaedi aeshaedi aeshaedi a e s h a e d i aeshaedi aeshaedi aeshaedi aeshaedi aeshaedi
+            aeshaedi aeshaedi <b>aeshaedi</b> aeshaedi aeshaedi aeshaedi aeshaedi aeshaedi aeshaedi aeshaedi aeshaedi
+            aeshaedi aeshaedi aeshaedi aeshaedi</p>
+        <p>You've stayed <span id="counterDisplay">0</span> seconds here</p>
+        <p>You've visited this site <span id="visitsDisplay"></span> times</p>
+        <hr>
+        <p>Contact me at <a href="mailto:aeshaedi@gmail.com">aeshaedi@gmail.com</a></p>
+    </div>
+
+    <p style="text-align: center;">web by aeshaedi 2024</p>
+
+    <script>
+
+        var locationHref = document.getElementById("locationHref")
+        locationHref.textContent = location.href.split("https://aeshaedi.github.io")[1]
+        var interval = setInterval(counting, 1000)
+        var seconds = 0
+        var counterDisplay = document.getElementById("counterDisplay")
+
+
+        function counting() {
+            seconds++
+            counterDisplay.textContent = seconds
+        }
+        var visitsDisplay = document.getElementById("visitsDisplay")
+        var visits = localStorage.getItem("visits")
+        if (visits == null) {
+            visits = 0
+        }
+        visits++
+        localStorage.setItem("visits", visits)
+        visitsDisplay.textContent = visits
+
+
+    </script>
+</body>
+
+</html>
