@@ -47,3 +47,9 @@ button:active {
     border: solid 3px black;
     width: max-content;
 }
+
+input {
+    all: unset;
+    padding: 15px;
+    border: solid 3px black
+}

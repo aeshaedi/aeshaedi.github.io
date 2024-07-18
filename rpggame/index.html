@@ -20,12 +20,20 @@
         </div>
         <hr>
 
-        <h2>Books</h2>
+        <h2>RPG Game</h2>
 
-        <p>I may have lost my real shape, I may have become the mask.
-        </p>
-        <p>I'm just the symbol of what I was in the past.</p>
-        <p>May some sourcery may help.</p>
+        <div id="showUserStats" style="display: none;">
+            <p><span id="displayName"></span> Level 1</p>
+            <p>What you wanna do?</p>
+            <button>Train</button>
+            <button>Combat</button>
+        </div>
+        <div id="getUserNameDiv" style="display: none;">
+            <p>What is your name?</p>
+            <input type="text" id="getUserName">
+            <button onclick="getUsername()">Okay</button>
+        </div>
+        <hr>
         <p>You've stayed <span id="counterDisplay">0</span> seconds here</p>
         <p>You've visited this site <span id="visitsDisplay"></span> times</p>
         <hr>
@@ -36,10 +44,28 @@
 
     <script>
         
+
+        var username = localStorage.getItem("username")
+        if (username == null){
+            getUserNameDiv.style.display = "block"
+        }
+        else {            
+            showUserStats.style.display = "block"
+            displayName.textContent = username
+        }
+
         var interval = setInterval(counting, 1000)
         var seconds = 0
        
         var counterDisplay = document.getElementById("counterDisplay")
+
+        function getUsername(){
+            username = getUserName.value;
+            displayName.textContent = username
+            localStorage.setItem("username", username)
+            showUserStats.style.display = "block"
+            getUserNameDiv.style.display = "none"
+        }
 
         function counting() {
             seconds++
