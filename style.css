@@ -1,6 +1,4 @@
-* {
-
-}
+* {}
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -13,7 +11,7 @@ body {
     image-rendering: pixelated;
 }
 
-hr{
+hr {
     border: solid 3px black;
 }
 
@@ -27,14 +25,23 @@ button {
     padding: 15px;
     border: solid 3px black;
     transition: 0.2s;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
 }
+
 button:hover {
-background-color: blue;
-color: white;}
+    background-color: blue;
+    color: white;
+}
 
 button:active {
     background-color: lightblue;
-    }
+}
+
 #buttonClickerDisplay {
     padding: 15px;
     border: solid 3px black;
