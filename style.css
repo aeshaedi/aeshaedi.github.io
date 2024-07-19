@@ -1,7 +1,7 @@
 
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     max-width: 800px;
     margin: auto;
     padding: 15px;
@@ -14,7 +14,9 @@ body {
 hr {
     border: solid 3px black;
 }
-
+img , iframe {
+    max-width: 100%;
+}
 a {
     text-decoration: none;
     color: blue;
@@ -53,3 +55,20 @@ input {
     padding: 15px;
     border: solid 3px black
 }
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: black;
+      color: white;
+    }
+    a {
+        color: greenyellow;
+    }
+    hr {
+        border: solid 3px white;
+    }
+    .icon {
+        filter: invert(1);
+    }
+  }

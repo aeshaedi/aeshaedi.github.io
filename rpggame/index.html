@@ -14,10 +14,8 @@
 
 <body>
     <div>
-        <div style="display:flex;align-items: center;"><img width="50px" height="50px" class="pixel"
-                src="/assets/aeshaedi-icon.png" alt="Aeshaedi icon">
-            <h1><a href="/" style="color: unset">Aeshaedi</a></h1>
-        </div>
+        <header></header>
+
         <hr>
 
         <h2>RPG Game</h2>
@@ -43,23 +41,23 @@
     <p style="text-align: center;">web by aeshaedi 2024</p>
 
     <script>
-        
+
 
         var username = localStorage.getItem("username")
-        if (username == null){
+        if (username == null) {
             getUserNameDiv.style.display = "block"
         }
-        else {            
+        else {
             showUserStats.style.display = "block"
             displayName.textContent = username
         }
 
         var interval = setInterval(counting, 1000)
         var seconds = 0
-       
+
         var counterDisplay = document.getElementById("counterDisplay")
 
-        function getUsername(){
+        function getUsername() {
             username = getUserName.value;
             displayName.textContent = username
             localStorage.setItem("username", username)
@@ -82,6 +80,8 @@
 
 
     </script>
+    <script src="/script.js"></script>
+
 </body>
 
 </html>
