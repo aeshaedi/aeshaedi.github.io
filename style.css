@@ -1,0 +1,72 @@
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 800px;
+    margin: auto;
+    padding: 15px;
+    background-color: black;
+    color: white;
+
+}
+
+.pixel {
+    image-rendering: pixelated;
+}
+
+hr {
+    border: solid 3px black;
+}
+img , iframe {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+button {
+    all: unset;
+    padding: 15px;
+    border: solid 3px black;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+}
+
+button:active {
+    background-color: lightblue;
+}
+
+#buttonClickerDisplay {
+    padding: 15px;
+    border: solid 3px black;
+    width: max-content;
+}
+
+input {
+    all: unset;
+    padding: 15px;
+    border: solid 3px black
+}
+
+hr {
+    border: solid 3px white;
+}
+.icon {
+    filter: invert(1);
+}
+
+.panoramic {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
