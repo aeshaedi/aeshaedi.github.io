@@ -15,7 +15,15 @@ a {
 #mainContainer {
     max-width: 800px;
     margin: auto;
+    
     /* border-right: 5px black solid; */
+}
+
+
+@media screen and (max-width: 480px) {
+  #mainContainer {
+    padding: 10px;
+  }
 }
 
 header {
