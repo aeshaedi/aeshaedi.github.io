@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+}
+
+#mainContainer {
+    max-width: 800px;
+    margin: auto;
+    /* border-right: 5px black solid; */
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main img {
+    border: solid 3px black;
+}
